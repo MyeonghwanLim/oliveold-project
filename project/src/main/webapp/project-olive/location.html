@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 매장찾기 </title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+   <link rel="shorycut icon" href="img/olive.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/olive.png">
+    
+    <style type="text/css">
+    #map{
+      margin : 10px;
+      width:90%;
+      height: 600px;
+      border: none;
+      text-align:center;
+   }
+   .content {
+   text-align:center;
+    }
+    </style>
+        <style type="text/css">
+    @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+   * {
+   font-family: 'GmarketSansMedium';
+   }
+    
+    </style>
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+   <!-- Header Section Begin -->
+   <header class="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6">
+                  <div class="header__top__left">
+                     <ul>
+                        <li><i class="fa fa-envelope"></i> oliveold@naver.com</li>
+                        <li></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="header__top__right">
+                     <div class="header__top__right__social">
+                        <a href="https://ko-kr.facebook.com/OLIVEYOUNG/"><i class="fa fa-facebook"></i></a> 
+                        <a href="https://twitter.com/oliveyoung"><i class="fa fa-twitter"></i></a> 
+                        <a href="https://www.instagram.com/oliveyoung_official/"><i class="fa fa-instagram"></i></a>
+                     </div>
+                     <div class="header__top__right__social">
+                        <a href="./login.html"><i class="fa fa-user"></i> 로그인 </a>
+                        <div class="header__top__right__auth">
+                           <a href="./signUp.html"><i class="fa fa-user"></i> 회원가입 </a>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="header__top__right__auth">
+                           <a href="./mypage.html"><i class="fa fa-user"></i> 마이페이지 </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3">
+               <div class="header__logo">
+                  <a href="./index.html"><img src="img/logo.png" alt=""></a>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <nav class="header__menu">
+                  <ul>
+                     <li class="active"><a href="./index.html"> 홈 </a></li>
+                     <li><a href="./blog.html">커뮤니티</a></li>
+                     <li><a href="./contact.html">고객센터</a></li>
+                     <li><a href="./location.html">매장찾기</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-lg-3">
+               <div class="header__cart">
+                  <div class="hero__search__phone__text">
+                     <br>
+                     <h5>+82 10-5369-4080</h5>
+                     <span>평일24시</span>
+                  </div>
+                  <div class="header__cart__price">
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="humberger__open">
+            <i class="fa fa-bars"></i>
+         </div>
+      </div>
+   </header>
+   <!-- Header Section End -->
+
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>매장찾기</h2>
+                        <div class="breadcrumb__option">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Map Section Begin -->
+    <div class="container">
+        <div class="row">
+      <br>
+        <div id="map"></div>
+      </div>
+      <br>
+      <button id="btn1" class="site-btn">강남점</button>
+      <button id="btn2" class="site-btn">홍대점</button>
+      <button id="btn3" class="site-btn">잠실점</button>
+      <button id="btn4" class="site-btn">여의도점</button>
+      <button id="btn5" class="site-btn">해운대점</button>
+      <button id="btn6" class="site-btn">광안리점</button>
+      <button id="btn7" class="site-btn">대전중앙점</button>
+      </div>
+       <br>
+       <br>
+       <br>
+    <!-- Map Section End -->
+
+   <!-- Footer Section Begin -->
+   <footer class="footer spad">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+               <div class="footer__about">
+                  <div class="footer__about__logo">
+                     <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                  </div>
+                  <ul>
+                     <li>주소: 서울특별시 강남구 테헤란로 146</li>
+                     <li>대표번호: +82 10-5369-4080</li>
+                     <li>카페: https://cafe.naver.com/jtstudio</li>
+                  </ul>
+               </div>
+            </div>
+            <div  style="margin-left:2%">
+               <div class="footer__widget">
+               <br>
+               <br>
+               <br>
+                  <h6>이용약관/법적고지</h6>
+                  <ul>
+                     <li><a>개인정보처리방침</a></li>
+                     <li><a>청소년보호방침</a></li>
+                     <li><a>영상정보처리기기 운영/관리방침</a></li>
+                     <li><a>이메일무단수집거부</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div style="margin-left:2%">
+               <div class="footer__widget">
+               <br>
+               <br>
+               <br>
+                  <h6>구매안전 서비스</h6>
+                  <ul>
+                     <li><a>올리브올드는 현금결제 금액에 대해</a></li>
+                     <li><a>하나은행과 채무지급보증 계약을 체결</a></li>
+                     <li><a>하여 안전한 거래를 보장하고 있습니다</a></li>
+                     <li><a href="#">서비스 가입사실확인</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div style="margin-left:2%">
+               <div class="footer__widget">
+               <br>
+               <br>
+               <br>
+                  <h6>최신 소식을 받아보세요</h6>
+                  <p>이메일을 입력하여 올리브올드 최신소식을 받아보세요!</p>
+                  <form action="#">
+                     <input type="text" placeholder="이메일을 입력하세요">
+                     <button type="submit" class="site-btn"> 구독 </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+            
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="footer__copyright">
+                  <div class="footer__copyright__text">
+                     <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>
+                           document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | This template is made with <i
+                           class="fa fa-heart" aria-hidden="true"></i> by <a
+                           href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                     </p>
+                  </div>
+                  <div class="footer__copyright__payment">
+                     <img src="img/payment-item.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+      <!-- Js Plugins -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.nice-select.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script src="js/jquery.slicknav.js"></script>
+      <script src="js/mixitup.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+      <!-- 구글맵 api --> 
+      <script src="http://maps.google.com/maps/api/js?key=AIzaSyBaIitw1fT-yMMSsxvJURH7RNkcjqJ9Ujo&region=kr"></script>
+    
+      <script type="text/javascript">
+   var btn1=document.getElementById('btn1');
+   btn1.addEventListener('click',func1);
+   var btn2=document.getElementById('btn2');
+   btn2.addEventListener('click',func2);
+   var btn3=document.getElementById('btn3');
+   btn3.addEventListener('click',func3);
+   var btn4=document.getElementById('btn4');
+   btn4.addEventListener('click',func4);
+   var btn5=document.getElementById('btn5');
+   btn5.addEventListener('click',func5);
+   var btn6=document.getElementById('btn6');
+   btn6.addEventListener('click',func6);
+   var btn7=document.getElementById('btn7');
+   btn7.addEventListener('click',func7);
+   
+   var map; 
+   function initMap(){
+      var ll1={lat:37.496486063,lng:127.028361548}; // 강남점
+      var ll2={lat:37.557434302, lng:126.926960224}; // 홍대점
+      var ll3={lat:37.514634749, lng:127.104260695}; // 잠실점
+      var ll4={lat:37.521715859, lng:126.92429001}; // 여의도점
+      var ll5={lat:35.181674, lng:129.177087}; // 해운대점 
+      var ll6={lat:35.157729627, lng:129.113006079}; // 광안리점
+      var ll7={lat:36.332165597, lng:127.434310227}; // 대전중앙점
+      
+      map=new google.maps.Map(
+            document.getElementById("map"),
+            {zoom:8,center:ll1}
+         );
+      new google.maps.Marker( // 마커 생성
+            {position:ll1,
+            map:map,  
+            });
+         
+      new google.maps.Marker( // 마커 생성
+            {position:ll2,
+             map:map,  
+            });
+         
+      new google.maps.Marker( // 마커 생성
+            {position:ll3,
+            map:map,  
+              });
+      
+      new google.maps.Marker( // 마커 생성
+            {position:ll4,   
+            map:map,  
+              });
+      
+      new google.maps.Marker( // 마커 생성
+            {position:ll5,
+             map:map,  
+             });
+      
+      new google.maps.Marker( // 마커 생성
+            {position:ll6,
+             map:map,  
+               });
+
+      new google.maps.Marker( // 마커 생성
+            {position:ll7,
+              map:map,  
+           });
+   }
+   initMap();
+   
+   function func1(){ // 강남점
+    var uluru={lat:37.496486063,lng:127.028361548};
+     map.panTo(uluru);
+     map.setZoom(18);
+     
+     const contentString =
+        '<h4>올리브영 강남점</h4>';
+        
+      const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+      });
+
+      const marker = new google.maps.Marker({
+           position: uluru,
+           map,
+           title: "올리브영 강남점",
+           
+         });
+      
+      marker.addListener("click", () => {
+           infowindow.open({
+             anchor: marker,
+             map,
+             shouldFocus: false,
+           });
+         });
+
+   }
+
+   function func2(){ // 홍대점
+      var uluru={lat:37.557434302, lng:126.926960224};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      
+      const contentString =
+         '<h4>올리브영 홍대점</h4>';
+         
+       const infowindow = new google.maps.InfoWindow({
+         content: contentString,
+       });
+
+       const marker = new google.maps.Marker({
+            position: uluru,
+            map,
+            title: "올리브영 홍대점",
+            
+          });
+       
+       marker.addListener("click", () => {
+            infowindow.open({
+              anchor: marker,
+              map,
+              shouldFocus: false,
+            });
+          });
+      
+   }
+   
+   function func3(){ // 잠실점
+      var uluru={lat:37.514634749, lng:127.104260695};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      
+      const contentString =
+         '<h4>올리브영 잠실점</h4>';
+         
+       const infowindow = new google.maps.InfoWindow({
+         content: contentString,
+       });
+
+       const marker = new google.maps.Marker({
+            position: uluru,
+            map,
+            title: "올리브영 잠실점",
+            
+          });
+       
+       marker.addListener("click", () => {
+            infowindow.open({
+              anchor: marker,
+              map,
+              shouldFocus: false,
+            });
+          });
+   }
+   
+   function func4(){ // 여의도점
+      var uluru={lat:37.521715859, lng:126.92429001};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      const contentString =
+          '<h4>올리브영 여의도점</h4>';
+          
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+
+        const marker = new google.maps.Marker({
+             position: uluru,
+             map,
+             title: "올리브영 여의도점",
+             
+           });
+        
+        marker.addListener("click", () => {
+             infowindow.open({
+               anchor: marker,
+               map,
+               shouldFocus: false,
+             });
+           });
+   }
+   
+   function func5(){ // 해운대점
+      var uluru={lat:35.181674, lng:129.177087};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      const contentString =
+          '<h4>올리브영 해운대점</h4>';
+          
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+
+        const marker = new google.maps.Marker({
+             position: uluru,
+             map,
+             title: "올리브영 해운대점",
+             
+           });
+        
+        marker.addListener("click", () => {
+             infowindow.open({
+               anchor: marker,
+               map,
+               shouldFocus: false,
+             });
+           });
+   }
+   
+   function func6(){ // 광안리점
+      var uluru={lat:35.157729627, lng:129.113006079};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      const contentString =
+          '<h4>올리브영 광안리점</h4>';
+          
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+
+        const marker = new google.maps.Marker({
+             position: uluru,
+             map,
+             title: "올리브영 광안리점",
+             
+           });
+        
+        marker.addListener("click", () => {
+             infowindow.open({
+               anchor: marker,
+               map,
+               shouldFocus: false,
+             });
+           });
+   }
+   function func7(){ // 대전중앙점
+      var uluru={lat:36.332165597, lng:127.434310227};
+      map.panTo(uluru);
+      map.setZoom(18);
+      
+      const contentString =
+          '<h4>올리브영 대전중앙점</h4>';
+          
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+
+        const marker = new google.maps.Marker({
+             position: uluru,
+             map,
+             title: "올리브영 대전중앙점",
+             
+           });
+        
+        marker.addListener("click", () => {
+             infowindow.open({
+               anchor: marker,
+               map,
+               shouldFocus: false,
+             });
+           });
+   }
+   
+   function toggleBounce() {
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

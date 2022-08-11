@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ogani Template">
+<meta name="keywords" content="Ogani, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>리뷰작성</title>
+
+<!-- Google Font -->
+<link
+   href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
+   rel="stylesheet">
+
+<!-- Css Styles -->
+
+<!-- Css Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link href='resource/jquery.rating.css' type="text/css" rel="stylesheet" />
+<link rel="shorycut icon" href="img/olive.png" type="image/png">
+<link rel="apple-touch-icon" href="img/olive.png">
+
+
+
+
+<style type="text/css">
+#map {
+   margin: 10px;
+   width: 90%;
+   height: 600px;
+   border: none;
+   text-align: center;
+}
+
+.content {
+   text-align: center;
+}
+@font-face {
+   font-family: 'GmarketSansMedium';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   font-family: 'GmarketSansMedium';
+}
+
+ .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+    height: 800px;
+}
+
+ #presence-list-container{
+    display : none;
+ }
+
+#star {
+   display: block;
+}
+
+.tab {
+   white-space: pre;
+}
+</style>
+
+</head>
+
+<body>
+   <!-- Page Preloder -->
+   <div id="preloder">
+      <div class="loader"></div>
+   </div>
+
+
+
+   <!-- Header Section Begin -->
+   <header class="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6">
+                  <div class="header__top__left">
+                     <ul>
+                        <li><i class="fa fa-envelope"></i> oliveold@naver.com</li>
+                        <li></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="header__top__right">
+                     <div class="header__top__right__social">
+                        <a href="https://ko-kr.facebook.com/OLIVEYOUNG/"><i
+                           class="fa fa-facebook"></i></a> <a
+                           href="https://twitter.com/oliveyoung"><i
+                           class="fa fa-twitter"></i></a> <a
+                           href="https://www.instagram.com/oliveyoung_official/"><i
+                           class="fa fa-instagram"></i></a>
+                     </div>
+                     <div class="header__top__right__social">
+                        <a href="./login.html"><i class="fa fa-user"></i> 로그인 </a>
+                        <div class="header__top__right__auth">
+                           <a href="./signUp.html"><i class="fa fa-user"></i> 회원가입 </a>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="header__top__right__auth">
+                           <a href="./mypage.html"><i class="fa fa-user"></i> 마이페이지 </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3">
+               <div class="header__logo">
+                  <a href="./index.html"><img src="img/logo.png" alt=""></a>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <nav class="header__menu">
+                  <ul>
+                     <li class="active"><a href="./index.html"> 홈 </a></li>
+                     <li><a href="./blog.html">커뮤니티</a></li>
+                     <li><a href="./contact.html">고객센터</a></li>
+                     <li><a href="./location.html">매장찾기</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-lg-3">
+               <div class="header__cart">
+                  <div class="hero__search__phone__text">
+                     <br>
+                     <h5>+82 10-5369-4080</h5>
+                     <span>평일24시</span>
+                  </div>
+                  <div class="header__cart__price">
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="humberger__open">
+            <i class="fa fa-bars"></i>
+         </div>
+      </div>
+   </header>
+   <!-- Header Section End -->
+
+   <!-- Breadcrumb Section Begin -->
+   <section class="breadcrumb-section set-bg"
+      data-setbg="img/breadcrumb.jpg">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 text-center">
+               <div class="breadcrumb__text">
+                  <h2>커뮤니티</h2>
+                  <div class="breadcrumb__option"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Breadcrumb Section End -->
+
+   <!-- Review Section Begin -->
+   <section>
+      <div class="contact-form spad">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="contact__form__title">
+                     <h2>리뷰를 작성해주세요</h2>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+            <form action="blog.html">
+               <select>
+                  <option>카테고리</option>
+                  <option>립 메이크업</option>
+                  <option>베이스 메이크업</option>
+                  <option>아이 메이크업</option>
+               </select> <br> <br> <br> 상품명 <input type="text"
+                  name="product" placeholder="상품명" required=“required”>
+
+
+
+               <div id="presence-list-container"></div>
+
+               <div id="editor-container">
+                  <div class="container">
+                     <div id="editor"></div>
+                     <div class="sidebar" id="sidebar"></div>
+                  </div>
+               </div>
+
+               <div id="revision-viewer-container">
+                  <div class="container">
+                     <div id="revision-viewer-editor"></div>
+                     <div class="sidebar" id="revision-viewer-sidebar"></div>
+                  </div>
+               </div>
+
+
+
+
+               <div id="tab-Testing">
+                  <br> 발색 정도
+                  <form id="star">
+                     <table width="100%">
+                        <tr>
+                           <td valign="top" height="50px">
+                              <div class="Clear">
+                                 <input name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" />
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+                  도포감
+                  <form id="star">
+                     <table width="100%">
+                        <tr>
+                           <td valign="top" height="50px">
+                              <div class="Clear">
+                                 <input name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" />
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+                  만족도
+                  <form id="star">
+                     <table width="100%">
+                        <tr>
+                           <td valign="top" height="50px">
+                              <div class="Clear">
+                                 <input name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" /> <input
+                                    name="star1" type="radio" class="star" />
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+
+               </div>
+               <a href="blog.html"><input type="submit" value="작성 완료" class="site-btn"></input></a>
+            </form>
+         </div>
+      </div>
+   </section>
+   <!-- Review Section End -->
+
+   <!-- Footer Section Begin -->
+   <footer class="footer spad">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+               <div class="footer__about">
+                  <div class="footer__about__logo">
+                     <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                  </div>
+                  <ul>
+                     <li>주소: 서울특별시 강남구 테헤란로 146</li>
+                     <li>대표번호: +82 10-5369-4080</li>
+                     <li>카페: https://cafe.naver.com/jtstudio</li>
+                  </ul>
+               </div>
+            </div>
+            <div style="margin-left: 2%">
+               <div class="footer__widget">
+                  <br> <br> <br>
+                  <h6>이용약관/법적고지</h6>
+                  <ul>
+                     <li><a>개인정보처리방침</a></li>
+                     <li><a>청소년보호방침</a></li>
+                     <li><a>영상정보처리기기 운영/관리방침</a></li>
+                     <li><a>이메일무단수집거부</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div style="margin-left: 2%">
+               <div class="footer__widget">
+                  <br> <br> <br>
+                  <h6>구매안전 서비스</h6>
+                  <ul>
+                     <li><a>올리브올드는 현금결제 금액에 대해</a></li>
+                     <li><a>하나은행과 채무지급보증 계약을 체결</a></li>
+                     <li><a>하여 안전한 거래를 보장하고 있습니다</a></li>
+                     <li><a href="#">서비스 가입사실확인</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div style="margin-left: 2%">
+               <div class="footer__widget">
+                  <br> <br> <br>
+                  <h6>최신 소식을 받아보세요</h6>
+                  <p>이메일을 입력하여 올리브올드 최신소식을 받아보세요!</p>
+                  <form action="#">
+                     <input type="text" placeholder="이메일을 입력하세요">
+                     <button type="submit" class="site-btn">구독</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="footer__copyright">
+                  <div class="footer__copyright__text">
+                     <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>
+                           document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | This template is made with <i
+                           class="fa fa-heart" aria-hidden="true"></i> by <a
+                           href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                     </p>
+                  </div>
+                  <div class="footer__copyright__payment">
+                     <img src="img/payment-item.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <!-- Js Plugins -->
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.nice-select.min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/jquery.slicknav.js"></script>
+   <script src="js/mixitup.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src='resource/jquery.js' type="text/javascript"></script>
+   <script src='resource/jquery.MetaData.js' type="text/javascript"
+      language="javascript"></script>
+   <script src='resource/jquery.rating.js' type="text/javascript"
+      language="javascript"></script>
+   <script
+      src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"
+      type="text/javascript"></script>
+
+   <!-- CKEditor -->
+   <script src="https://cdn.ckbox.io/CKBox/1.1.0/ckbox.js"></script>
+   <script
+      src="https://cdn.ckeditor.com/ckeditor5/34.2.0/super-build/ckeditor.js"></script>
+   <script
+      src="https://cdn.ckeditor.com/ckeditor5/34.2.0/super-build/translations/es.js"></script>
+   <script>
+    CKEDITOR.ClassicEditor.create( document.querySelector( '#editor' ), {
+        toolbar: {
+            items: [
+                'ckbox', 'uploadImage', '|',
+                'exportPDF','exportWord', '|',
+                'comment', 'trackChanges', 'revisionHistory', '|',
+                'findAndReplace', 'selectAll', '|',
+                'bold', 'italic', 'strikethrough', 'underline', 'removeFormat', '|',
+                'bulletedList', 'numberedList', 'todoList', '|',
+                'outdent', 'indent', '|',
+                'undo', 'redo',
+                '-',
+                'heading', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'highlight', '|',
+                'alignment', '|',
+                'link', 'blockQuote', 'insertTable', 'mediaEmbed', 'codeBlock', 'htmlEmbed', '|',
+                'specialCharacters', 'horizontalLine', 'pageBreak', '|',
+            ],
+            shouldNotGroupWhenFull: true
+        },
+        list: {
+            properties: {
+                styles: true,
+                startIndex: true,
+                reversed: true
+            }
+        },
+        heading: {
+            options: [
+                { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+                { model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+                { model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' },
+                { model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
+                { model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' }
+            ]
+        },
+        fontFamily: {
+            options: [
+                'default',
+                'Arial, Helvetica, sans-serif',
+                'Courier New, Courier, monospace',
+                'Georgia, serif',
+                'Lucida Sans Unicode, Lucida Grande, sans-serif',
+                'Tahoma, Geneva, sans-serif',
+                'Times New Roman, Times, serif',
+                'Trebuchet MS, Helvetica, sans-serif',
+                'Verdana, Geneva, sans-serif'
+            ],
+            supportAllValues: true
+        },
+        fontSize: {
+            options: [ 10, 12, 14, 'default', 18, 20, 22 ],
+            supportAllValues: true
+        },
+        htmlEmbed: {
+            showPreviews: true
+        },
+        mention: {
+            feeds: [
+                {
+                    marker: '@',
+                    feed: [
+                        '@apple', '@bears', '@brownie', '@cake', '@cake', '@candy', '@canes', '@chocolate', '@cookie', '@cotton', '@cream',
+                        '@cupcake', '@danish', '@donut', '@dragée', '@fruitcake', '@gingerbread', '@gummi', '@ice', '@jelly-o',
+                        '@liquorice', '@macaroon', '@marzipan', '@oat', '@pie', '@plum', '@pudding', '@sesame', '@snaps', '@soufflé',
+                        '@sugar', '@sweet', '@topping', '@wafer'
+                    ],
+                    minimumCharacters: 1
+                }
+            ]
+        },
+        placeholder: '사용하신 제품의 자세한 리뷰를 남겨주세요.',
+        cloudServices: {
+            tokenUrl: 'https://91145.cke-cs.com/token/dev/D8Wczg1cB6DVi6X6k9RgkyO3xmfCqN43cFGx?limit=10',
+            webSocketUrl: 'wss://91145.cke-cs.com/ws'
+        },
+        collaboration: {
+            channelId: 'document-id-2'
+        },
+        sidebar: {
+            container: document.querySelector( '#sidebar' )
+        },
+        presenceList: {
+            container: document.querySelector( '#presence-list-container' )
+        },
+        comments: {
+            editorConfig: {
+                extraPlugins: CKEDITOR.ClassicEditor.builtinPlugins.filter( plugin => {
+                    return [ 'Bold', 'Italic', 'Underline', 'List', 'Autoformat', 'Mention' ].includes( plugin.pluginName );
+                } ),
+                mention: {
+                    feeds: [
+                        {
+                            marker: '@',
+                            feed: [
+                                '@Baby Doe', '@Joe Doe', '@Jane Doe', '@Jane Roe', '@Richard Roe'
+                            ],
+                            minimumCharacters: 1
+                        }
+                    ]
+                },
+            }
+        },
+        revisionHistory: {
+            editorContainer: document.querySelector( '#editor-container' ),
+            viewerContainer: document.querySelector( '#revision-viewer-container' ),
+            viewerEditorElement: document.querySelector( '#revision-viewer-editor' ),
+            viewerSidebarContainer: document.querySelector( '#revision-viewer-sidebar' ),
+        },
+        ckbox: {
+            tokenUrl: 'https://91145.cke-cs.com/token/dev/D8Wczg1cB6DVi6X6k9RgkyO3xmfCqN43cFGx?limit=10'
+        },
+        licenseKey: '3u/fXtcN9Hr8qKhbtIPi0dRewYopgfcJNizeXRXsxO4Zm6M2rOfwu7RZug==',
+        removePlugins: [
+            'Pagination',
+            'Base64UploadAdapter',
+            'CKFinder',
+            'EasyImage',
+            'WProofreader',
+            'SourceEditing',
+            'MathType'
+        ]
+    } )
+        .then( editor => {
+            window.editor = editor;
+
+            const annotationsUIs = editor.plugins.get( 'AnnotationsUIs' );
+            const sidebarElement = document.querySelector( '.sidebar' );
+            let currentWidth;
+
+            function refreshDisplayMode() {
+                if ( window.innerWidth === currentWidth ) {
+                    return;
+                }
+                currentWidth = window.innerWidth;
+
+                if ( currentWidth < 1000 ) {
+                    sidebarElement.classList.remove( 'narrow' );
+                    sidebarElement.classList.add( 'hidden' );
+                    annotationsUIs.switchTo( 'inline' );
+                }
+                else if ( currentWidth < 1300 ) {
+                    sidebarElement.classList.remove( 'hidden' );
+                    sidebarElement.classList.add( 'narrow' );
+                    annotationsUIs.switchTo( 'narrowSidebar' );
+                }
+                else {
+                    sidebarElement.classList.remove( 'hidden', 'narrow' );
+                    annotationsUIs.switchTo( 'wideSidebar' );
+                }
+            }
+
+            editor.ui.view.listenTo( window, 'resize', refreshDisplayMode );
+            refreshDisplayMode();
+
+            return editor;
+        } )
+        .catch( error => {
+            console.error( 'There was a problem initializing the editor.', error );
+        } );
+</script>
+
+   <!-- 별점 플러그인 -->
+   <script>
+      $(function() {
+      $('.hover-star').rating(
+      {focus : function(value, link) {
+      var tip = $('#hover-test');
+         tip[0].data = tip[0].data|| tip.html();
+         tip.html(link.title|| 'value: '+ value);
+         },
+      blur : function(value, link) {
+               var tip = $('#hover-test');
+   $('#hover-test').html(
+               tip[0].data || '');
+         }
+         });
+      });
+   </script>
+
+   <script type="text/javascript" language="javascript">
+      $(function() {
+         $('#form :radio.star').rating();
+         });
+   </script>
+
+
+
+
+</body>
+
+</html>
